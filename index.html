@@ -36,15 +36,15 @@
     </div>
 
     <script>
-        // Correct URL without any extra slashes
+        // Absolute URL (make sure the full URL is correctly entered)
         const redirectUrl = "https://adilkt16.github.io/technora3/";
 
-        // Log the URL to the console to check if it's correct
+        // Log the URL to check if it's correct
         console.log("Redirecting to:", redirectUrl);
 
         // Wait for 3 seconds before redirecting
         setTimeout(() => {
-            // Check again if the URL is correct before redirect
+            // Log again before the redirect
             console.log("Final Redirecting to:", redirectUrl);
             window.location.href = redirectUrl;
         }, 3000); // 3000ms = 3 seconds
