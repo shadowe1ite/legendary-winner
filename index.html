@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
-    <script>
-        // JavaScript to automatically redirect
-        window.location.href = "https://https://adilkt16.github.io/technora3/";
-    </script>
+    <title>Redirecting...</title>
+    <style>
+        /* Simple styling for the redirect page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+
+        .redirect-message {
+            font-size: 24px;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Redirecting...</h1>
+
+    <div class="redirect-message">
+        Redirecting... Please wait.
+    </div>
+
+    <script>
+        // Corrected URL for redirect
+        const redirectUrl = "https://adilkt16.github.io/technora3/";
+
+        // Wait for 3 seconds before redirecting
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, 3000); // 3000ms = 3 seconds
+    </script>
+    
 </body>
 </html>
