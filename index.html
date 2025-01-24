@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Page</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Styling for the redirect message */
+        .redirect-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
     <script type="text/javascript">
         // This function will be called when the window loads
         function redirectToAnotherWebsite() {
             // URL of the website to redirect to
-            var url = "https://www.example.com";
-            // Redirect to the specified URL
-            window.location.href = url;
+            var url = "https://adilkt16.github.io/technora3/";
+            // Redirect to the specified URL after 3 seconds
+            setTimeout(function() {
+                window.location.href = url;
+            }, 3000); // 3000 milliseconds = 3 seconds
         }
 
         // Add an event listener to call the redirect function when the window loads
@@ -18,7 +56,9 @@
     </script>
 </head>
 <body>
-    <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, <a href="https://www.example.com">click here</a>.</p>
+    <div class="redirect-container">
+        <h1>Redirecting...</h1>
+        <p>If you are not redirected automatically, <a href="https://adilkt16.github.io/technora3/">click here</a>.</p>
+    </div>
 </body>
 </html>
