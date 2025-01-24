@@ -3,52 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-        /* Simple styling for the redirect page */
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-            margin: 0;
+    <title>Redirect Page</title>
+    <script type="text/javascript">
+        // This function will be called when the window loads
+        function redirectToAnotherWebsite() {
+            // URL of the website to redirect to
+            var url = "https://www.example.com";
+            // Redirect to the specified URL
+            window.location.href = url;
         }
 
-        .redirect-message {
-            font-size: 24px;
-            font-weight: bold;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-    </style>
+        // Add an event listener to call the redirect function when the window loads
+        window.onload = redirectToAnotherWebsite;
+    </script>
 </head>
 <body>
-
-    <div class="redirect-message">
-        Redirecting... Please wait.
-    </div>
-
-    <script>
-        // Absolute URL (make sure the full URL is correctly entered)
-        const redirectUrl = "https://adilkt16.github.io/technora3/";
-
-        // Log the URL to check if it's correct
-        console.log("Redirecting to:", redirectUrl);
-
-        // Wait for 3 seconds before redirecting
-        setTimeout(() => {
-            // Log again before the redirect
-            console.log("Final Redirecting to:", redirectUrl);
-            window.location.href = redirectUrl;
-        }, 3000); // 3000ms = 3 seconds
-    </script>
-    
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="https://www.example.com">click here</a>.</p>
 </body>
 </html>
